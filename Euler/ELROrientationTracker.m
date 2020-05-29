@@ -1,6 +1,6 @@
 //
 //  ELROrientationTracker.m
-//  Euler Demo
+//  Euler
 //
 //  Created by Jack Mousseau on 5/28/20.
 //  Copyright © 2020 Jack Mousseau. All rights reserved.
