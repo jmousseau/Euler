@@ -31,7 +31,7 @@ public class OrientationViewController : UIViewController {
         return label
     }()
 
-    private let orientationTracker = ELROrientationTracker()
+    private let orientationTracker = OrientationTracker()
 
     public init() {
         super.init(nibName: nil, bundle: nil)
@@ -135,7 +135,7 @@ public class OrientationViewController : UIViewController {
 extension OrientationViewController: ARSessionDelegate {
 
     public func session(_ session: ARSession, didUpdate frame: ARFrame) {
-        orientationTracker.add(frame)
+        orientationTracker.add(frame: frame)
     }
 
 }

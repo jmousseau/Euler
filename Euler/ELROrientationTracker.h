@@ -16,6 +16,7 @@
 FOUNDATION_EXPORT NSString * _Nullable const ELROrientationDidChangeNotification;
 
 /// An orientation tracker that determines device orientation using AR frames.
+NS_SWIFT_NAME(OrientationTracker)
 @interface ELROrientationTracker : NSObject
 
 /// The current interface orientation.
@@ -24,6 +25,6 @@ FOUNDATION_EXPORT NSString * _Nullable const ELROrientationDidChangeNotification
 /// Add a given AR frame to the tracker.
 ///
 /// @param frame The frame to add.
-- (void)addFrame:(nonnull ARFrame *)frame;
+- (void)addFrame:(nonnull ARFrame *)frame NS_SWIFT_NAME(add(frame:));
 
 @end
