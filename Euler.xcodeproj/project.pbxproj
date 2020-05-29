@@ -8,16 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		04E60B952480B36200306452 /* Euler.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E60B932480B36200306452 /* Euler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		04E60BAE2480B3A300306452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E60BAD2480B3A300306452 /* Assets.xcassets */; };
+		04E60BB12480B3A300306452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E60BAF2480B3A300306452 /* LaunchScreen.storyboard */; };
+		04E60BB42480B3A300306452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BB32480B3A300306452 /* main.m */; };
+		04E60BBA2480B3FE00306452 /* ELRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BB92480B3FE00306452 /* ELRAppDelegate.m */; };
+		04E60BBD2480B41500306452 /* ELRSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BBB2480B41500306452 /* ELRSceneDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04E60B902480B36200306452 /* Euler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Euler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E60B932480B36200306452 /* Euler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Euler.h; sourceTree = "<group>"; };
 		04E60B942480B36200306452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E60B9F2480B3A200306452 /* Euler Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Euler Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04E60BAD2480B3A300306452 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04E60BB02480B3A300306452 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04E60BB22480B3A300306452 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04E60BB32480B3A300306452 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
+		04E60BB82480B3FE00306452 /* ELRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELRAppDelegate.h; path = ../ELRAppDelegate.h; sourceTree = "<group>"; };
+		04E60BB92480B3FE00306452 /* ELRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELRAppDelegate.m; path = ../ELRAppDelegate.m; sourceTree = "<group>"; };
+		04E60BBB2480B41500306452 /* ELRSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELRSceneDelegate.m; path = ../ELRSceneDelegate.m; sourceTree = "<group>"; };
+		04E60BBC2480B41500306452 /* ELRSceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELRSceneDelegate.h; path = ../ELRSceneDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04E60B8D2480B36200306452 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E60B9C2480B3A200306452 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				04E60B922480B36200306452 /* Euler */,
+				04E60BA02480B3A200306452 /* Euler Demo */,
 				04E60B912480B36200306452 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				04E60B902480B36200306452 /* Euler.framework */,
+				04E60B9F2480B3A200306452 /* Euler Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -50,6 +73,37 @@
 				04E60B932480B36200306452 /* Euler.h */,
 			);
 			path = Euler;
+			sourceTree = "<group>";
+		};
+		04E60BA02480B3A200306452 /* Euler Demo */ = {
+			isa = PBXGroup;
+			children = (
+				04E60BB22480B3A300306452 /* Info.plist */,
+				04E60BBE2480B43400306452 /* Main */,
+				04E60BBF2480B45A00306452 /* Assets */,
+			);
+			path = "Euler Demo";
+			sourceTree = "<group>";
+		};
+		04E60BBE2480B43400306452 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				04E60BB32480B3A300306452 /* main.m */,
+				04E60BB82480B3FE00306452 /* ELRAppDelegate.h */,
+				04E60BB92480B3FE00306452 /* ELRAppDelegate.m */,
+				04E60BBC2480B41500306452 /* ELRSceneDelegate.h */,
+				04E60BBB2480B41500306452 /* ELRSceneDelegate.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		04E60BBF2480B45A00306452 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				04E60BAD2480B3A300306452 /* Assets.xcassets */,
+				04E60BAF2480B3A300306452 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +138,23 @@
 			productReference = 04E60B902480B36200306452 /* Euler.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		04E60B9E2480B3A200306452 /* Euler Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04E60BB52480B3A300306452 /* Build configuration list for PBXNativeTarget "Euler Demo" */;
+			buildPhases = (
+				04E60B9B2480B3A200306452 /* Sources */,
+				04E60B9C2480B3A200306452 /* Frameworks */,
+				04E60B9D2480B3A200306452 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Euler Demo";
+			productName = "Euler Demo";
+			productReference = 04E60B9F2480B3A200306452 /* Euler Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -94,6 +165,9 @@
 				ORGANIZATIONNAME = "Jack Mousseau";
 				TargetAttributes = {
 					04E60B8F2480B36200306452 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					04E60B9E2480B3A200306452 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
@@ -112,6 +186,7 @@
 			projectRoot = "";
 			targets = (
 				04E60B8F2480B36200306452 /* Euler */,
+				04E60B9E2480B3A200306452 /* Euler Demo */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +196,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04E60B9D2480B3A200306452 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E60BB12480B3A300306452 /* LaunchScreen.storyboard in Resources */,
+				04E60BAE2480B3A300306452 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +218,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		04E60B9B2480B3A200306452 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04E60BBD2480B41500306452 /* ELRSceneDelegate.m in Sources */,
+				04E60BBA2480B3FE00306452 /* ELRAppDelegate.m in Sources */,
+				04E60BB42480B3A300306452 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		04E60BAF2480B3A300306452 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				04E60BB02480B3A300306452 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		04E60B962480B36200306452 /* Debug */ = {
@@ -299,6 +404,40 @@
 			};
 			name = Release;
 		};
+		04E60BB62480B3A300306452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVFKAL5KFM;
+				INFOPLIST_FILE = "Euler Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jmousseau.Euler-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04E60BB72480B3A300306452 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LVFKAL5KFM;
+				INFOPLIST_FILE = "Euler Demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jmousseau.Euler-Demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -316,6 +455,15 @@
 			buildConfigurations = (
 				04E60B992480B36200306452 /* Debug */,
 				04E60B9A2480B36200306452 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04E60BB52480B3A300306452 /* Build configuration list for PBXNativeTarget "Euler Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04E60BB62480B3A300306452 /* Debug */,
+				04E60BB72480B3A300306452 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
