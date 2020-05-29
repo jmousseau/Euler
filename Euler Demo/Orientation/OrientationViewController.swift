@@ -49,6 +49,8 @@ public class OrientationViewController : UIViewController {
         setUpARView()
         setUpOrientationLabel()
 
+        orientationLabel.text = string(for: orientationTracker.orientation)
+
         runConfiguration()
 
         NotificationCenter.default.addObserver(
