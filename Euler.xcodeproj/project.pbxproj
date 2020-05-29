@@ -7,13 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		048C024B2480BBDD00148B91 /* Euler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04E60B902480B36200306452 /* Euler.framework */; };
+		048C024C2480BBDD00148B91 /* Euler.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04E60B902480B36200306452 /* Euler.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		04E60B952480B36200306452 /* Euler.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E60B932480B36200306452 /* Euler.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04E60BAE2480B3A300306452 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E60BAD2480B3A300306452 /* Assets.xcassets */; };
 		04E60BB12480B3A300306452 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E60BAF2480B3A300306452 /* LaunchScreen.storyboard */; };
 		04E60BB42480B3A300306452 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BB32480B3A300306452 /* main.m */; };
 		04E60BBA2480B3FE00306452 /* ELRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BB92480B3FE00306452 /* ELRAppDelegate.m */; };
 		04E60BBD2480B41500306452 /* ELRSceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BBB2480B41500306452 /* ELRSceneDelegate.m */; };
+		04E60BC32480B57200306452 /* OrientationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BC22480B57200306452 /* OrientationViewController.swift */; };
+		04E60BCA2480B9A300306452 /* ELROrientationTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E60BC82480B61300306452 /* ELROrientationTracker.m */; };
+		04E60BCB2480B9A500306452 /* ELROrientationTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 04E60BC72480B61300306452 /* ELROrientationTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		048C024D2480BBDD00148B91 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				048C024C2480BBDD00148B91 /* Euler.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		04E60B902480B36200306452 /* Euler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Euler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,6 +47,10 @@
 		04E60BB92480B3FE00306452 /* ELRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELRAppDelegate.m; path = ../ELRAppDelegate.m; sourceTree = "<group>"; };
 		04E60BBB2480B41500306452 /* ELRSceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELRSceneDelegate.m; path = ../ELRSceneDelegate.m; sourceTree = "<group>"; };
 		04E60BBC2480B41500306452 /* ELRSceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELRSceneDelegate.h; path = ../ELRSceneDelegate.h; sourceTree = "<group>"; };
+		04E60BC12480B57200306452 /* Euler Demo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Euler Demo-Bridging-Header.h"; sourceTree = "<group>"; };
+		04E60BC22480B57200306452 /* OrientationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationViewController.swift; sourceTree = "<group>"; };
+		04E60BC72480B61300306452 /* ELROrientationTracker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELROrientationTracker.h; sourceTree = "<group>"; };
+		04E60BC82480B61300306452 /* ELROrientationTracker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELROrientationTracker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				048C024B2480BBDD00148B91 /* Euler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +78,7 @@
 				04E60B922480B36200306452 /* Euler */,
 				04E60BA02480B3A200306452 /* Euler Demo */,
 				04E60B912480B36200306452 /* Products */,
+				04E60BC52480B5E000306452 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,8 @@
 			children = (
 				04E60B942480B36200306452 /* Info.plist */,
 				04E60B932480B36200306452 /* Euler.h */,
+				04E60BC72480B61300306452 /* ELROrientationTracker.h */,
+				04E60BC82480B61300306452 /* ELROrientationTracker.m */,
 			);
 			path = Euler;
 			sourceTree = "<group>";
@@ -79,7 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				04E60BB22480B3A300306452 /* Info.plist */,
+				04E60BC12480B57200306452 /* Euler Demo-Bridging-Header.h */,
 				04E60BBE2480B43400306452 /* Main */,
+				04E60BC42480B59900306452 /* Orientation */,
 				04E60BBF2480B45A00306452 /* Assets */,
 			);
 			path = "Euler Demo";
@@ -106,6 +135,21 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		04E60BC42480B59900306452 /* Orientation */ = {
+			isa = PBXGroup;
+			children = (
+				04E60BC22480B57200306452 /* OrientationViewController.swift */,
+			);
+			path = Orientation;
+			sourceTree = "<group>";
+		};
+		04E60BC52480B5E000306452 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -113,6 +157,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E60BCB2480B9A500306452 /* ELROrientationTracker.h in Headers */,
 				04E60B952480B36200306452 /* Euler.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +190,7 @@
 				04E60B9B2480B3A200306452 /* Sources */,
 				04E60B9C2480B3A200306452 /* Frameworks */,
 				04E60B9D2480B3A200306452 /* Resources */,
+				048C024D2480BBDD00148B91 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -169,6 +215,7 @@
 					};
 					04E60B9E2480B3A200306452 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -215,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E60BCA2480B9A300306452 /* ELROrientationTracker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04E60BBD2480B41500306452 /* ELRSceneDelegate.m in Sources */,
+				04E60BC32480B57200306452 /* OrientationViewController.swift in Sources */,
 				04E60BBA2480B3FE00306452 /* ELRAppDelegate.m in Sources */,
 				04E60BB42480B3A300306452 /* main.m in Sources */,
 			);
@@ -408,6 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LVFKAL5KFM;
 				INFOPLIST_FILE = "Euler Demo/Info.plist";
@@ -417,6 +467,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jmousseau.Euler-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Euler Demo/Euler Demo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -425,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LVFKAL5KFM;
 				INFOPLIST_FILE = "Euler Demo/Info.plist";
@@ -434,6 +488,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jmousseau.Euler-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Euler Demo/Euler Demo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

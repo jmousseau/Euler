@@ -13,3 +13,5 @@ FOUNDATION_EXPORT double EulerVersionNumber;
 
 //! Euler project version string.
 FOUNDATION_EXPORT const unsigned char EulerVersionString[];
+
+#import <Euler/ELROrientationTracker.h>

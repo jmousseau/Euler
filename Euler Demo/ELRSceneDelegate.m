@@ -7,6 +7,7 @@
 //
 
 #import "ELRSceneDelegate.h"
+#import "Euler_Demo-Swift.h"
 
 @implementation ELRSceneDelegate
 
@@ -18,7 +19,7 @@ willConnectToSession:(UISceneSession *)session
     }
 
     self.window = [[UIWindow alloc] initWithWindowScene:(UIWindowScene *)scene];
-    self.window.rootViewController = [[UIViewController alloc] init];
+    self.window.rootViewController = [[OrientationViewController alloc] init];
     [self.window makeKeyAndVisible];
 }
 
